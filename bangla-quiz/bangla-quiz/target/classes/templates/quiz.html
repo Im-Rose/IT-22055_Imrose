@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>বাংলা Quiz</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+<h1>বাংলা Chemistry Quiz</h1>
+<form action="/submit" method="post">
+    <label>Student ID:</label>
+    <input type="text" name="studentId" required /><br/><br/>
+
+    <label>পানির রাসায়নিক সূত্র কী?</label><br/>
+    <input type="radio" name="q1" value="H2O" required /> H2O<br/>
+    <input type="radio" name="q1" value="CO2" /> CO2<br/>
+    <input type="radio" name="q1" value="O2" /> O2<br/>
+    <input type="radio" name="q1" value="NaCl" /> NaCl<br/><br/>
+
+    <label>অ্যাটমের কেন্দ্র অংশ কী নামে পরিচিত?</label><br/>
+    <input type="radio" name="q2" value="নিউক্লিয়াস" required /> নিউক্লিয়াস<br/>
+    <input type="radio" name="q2" value="ইলেকট্রন" /> ইলেকট্রন<br/>
+    <input type="radio" name="q2" value="প্রোটন" /> প্রোটন<br/>
+    <input type="radio" name="q2" value="নিউট্রন" /> নিউট্রন<br/><br/>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
